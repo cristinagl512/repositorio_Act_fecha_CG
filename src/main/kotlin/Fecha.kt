@@ -1,8 +1,21 @@
 package org.example
 
+/**
+ * Fecha
+ *
+ * @property dias
+ * @property mes
+ * @property a
+ * @constructor Create empty Fecha
+ */
 class Fecha(private val dias: Int, private val mes: Int, private val a: Int) {
 
 
+    /**
+     * Valida
+     *
+     * @return
+     */
     fun valida(): Boolean {
 
         if (dias < 1 || dias > 31) return false
